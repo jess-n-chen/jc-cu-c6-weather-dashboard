@@ -44,6 +44,8 @@ THEN I am again presented with current and future conditions for that city
 
 ## Screenshots
 
+![Weather Dashboard Mockup](./assets/images/06-server-side-apis-homework-demo.png)
+
 ## Contact
 
 Created by: Jessica Chen | jessicachen28@gmail.com

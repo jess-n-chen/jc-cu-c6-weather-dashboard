@@ -13,6 +13,15 @@
   padding: 0;
 }
 
+h1,
+h2 {
+  font-weight: bold !important;
+}
+
+h2 {
+  font-size: 1.5rem !important;
+}
+
 /* Header/Hero Styling */
 .hero {
   background: rgb(1, 166, 255, 1);
@@ -24,17 +33,9 @@
   );
 }
 
-.hero h1 {
-  font-weight: bold;
-}
-
 /* Search Column Section Styling */
 #search-form {
   border-bottom: 1px solid gray;
-}
-
-#search-form h2 {
-  font-weight: bold;
 }
 
 .search-city {
@@ -49,4 +50,9 @@
 .error-message {
   color: #ff0101;
   font-style: italic;
+}
+
+/* Weather Data Section Styling */
+.weather-results {
+  border: 1px solid gray;
 }
