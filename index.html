@@ -17,8 +17,47 @@
     ></script>
     <title>Weather Dashboard | Homepage</title>
   </head>
-  <body>
+  <body class="flex-column min-100-vh">
+    <!-- Hero/Header -->
+    <header class="hero p-2">
+      <h1 class="text-center text-white">Weather Dashboard</h1>
+    </header>
+
+    <!-- Main Body -->
+    <main class="main-container container-fluid">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-12 col-md-3 p-3">
+          <!-- Top: Search Column -->
+          <div class="search-col">
+            <form id="search-form" class="pb-3">
+              <h2>Search for a City:</h2>
+              <input
+                auto-focus="true"
+                class="form-control mt-2 mb-3"
+                id="city-input"
+                placeholder="Enter a city"
+                type="search"
+              />
+              <button type="submit" class="search-city">Search</button>
+            </form>
+          </div>
+          <!-- Bottom: Past Searches Column -->
+          <div class="col-12 col-md-3 p-3 past-search"></div>
+        </div>
+        <!-- Right Column -->
+        <div class="col-12 col-md-9 weather-results">
+          <!-- Top: Weather Column -->
+          <div class="weather-data"></div>
+          <!-- Bottom: Forecast Column -->
+          <div class="forecast"></div>
+        </div>
+      </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

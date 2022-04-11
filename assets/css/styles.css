@@ -1,0 +1,52 @@
+/* CSS Variables */
+:root {
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  --light-blue-color: #01a6ff;
+  --white-color: #fff;
+}
+
+/* General Styling */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header/Hero Styling */
+.hero {
+  background: rgb(1, 166, 255, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 166, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 37%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.hero h1 {
+  font-weight: bold;
+}
+
+/* Search Column Section Styling */
+#search-form {
+  border-bottom: 1px solid gray;
+}
+
+#search-form h2 {
+  font-weight: bold;
+}
+
+.search-city {
+  background-color: var(--light-blue-color);
+  border: 1px solid var(--light-blue-color);
+  border-radius: 4px;
+  color: var(--white-color);
+  padding: 7px 10px;
+  width: 100%;
+}
+
+.error-message {
+  color: #ff0101;
+  font-style: italic;
+}
